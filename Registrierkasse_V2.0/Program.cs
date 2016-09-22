@@ -11,7 +11,6 @@ namespace Registrierkasse_V2._0
     static void Main(string[] args)
     {
       Console.Title = "PayOS";
-      char euro = (char)128;
       double gesamtpreis = 0, MwST;
       double[] preis = new double[1000];
       string[] name = new string[1000];
@@ -30,6 +29,7 @@ namespace Registrierkasse_V2._0
         i++;
         Console.Clear();
         Console.WriteLine("Willkommen bei PayOS");
+        Console.WriteLine("Wenn Sie alle Preise eingegeben haben, geben Sie 'x' ein um die Eingabe zu beenden");
         Console.WriteLine("Bitte geben Sie jetzt den Namen des nächsten Artikels ein");
         eingabe = Console.ReadLine();
       }
